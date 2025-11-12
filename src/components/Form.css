@@ -1,0 +1,19 @@
+.form_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.submit_btn {
+    font-family: Montserrat, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    left: 535px;
+    padding: 10px;
+    max-width: 200px;
+    background-color: rgba(63, 47, 141, 0.18);
+}
+
+.submit_btn:hover {
+    background-color: rgba(63, 47, 141, 0.292);
+}

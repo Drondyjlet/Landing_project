@@ -1,0 +1,90 @@
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/Montserrat-SemiBold.ttf'), format('embedded-opentype'), /* IE < 9 */
+      url('../fonts/Montserrat-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../fonts/Montserrat-Regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+      url('../fonts/Montserrat-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+      url('../fonts/Montserrat-Regular.svg#sfns_display') format('svg'); /* Chrome < 4, Legacy iOS */
+  }
+
+.header_list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+
+.header_list_element {
+    font-family: Montserrat, Helvetica, sans-serif;
+    padding: 0;
+    font-size: 20px;
+}
+
+.header_link {
+    padding: 0;
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+}
+
+.header_link:hover {
+    color: #d4af37;
+    transition: color 0.3s;
+}
+
+.header_title {
+    margin-right: 400px;
+    font-family: Montserrat, Helvetica, sans-serif;
+    padding: 0;
+}
+
+.header_dark {
+  background-color: #1a202c;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.header_dark .header_link {
+  color: #e2e8f0;
+}
+
+.header_dark .header_link:hover {
+  color: #63b3ed;
+}
+
+.header_dark .header_title h2 {
+  color: #f7fafc;
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* Светлая тема */
+.header_container .theme-toggle-btn {
+  color: #333;
+  border-color: #333;
+}
+
+/* Темная тема */
+.header_dark .theme-toggle-btn {
+  color: #e2e8f0;
+  border-color: #e2e8f0;
+}

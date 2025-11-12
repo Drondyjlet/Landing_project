@@ -1,0 +1,160 @@
+.user_card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.user_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.avatar-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #4CAF50;
+}
+
+.status {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.status.online {
+  background-color: #4CAF50;
+}
+
+.status.offline {
+  background-color: #ff4444;
+}
+
+.user_info {
+  margin-bottom: 15px;
+}
+
+.user_name {
+  color: #333;
+  margin: 0 0 8px 0;
+  font-size: 1.4em;
+}
+
+.user_age {
+  color: #666;
+  margin: 4px 0;
+  font-size: 1em;
+}
+
+.user_occupation {
+  color: #4CAF50;
+  font-weight: bold;
+  margin: 4px 0;
+  font-size: 1em;
+}
+
+.rating {
+  margin: 10px 0;
+  color: #ffc107;
+  font-size: 1.2em;
+}
+
+.contact-btn {
+  margin-bottom: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s ease;
+}
+
+.contact-btn:hover {
+  background-color: #45a049;
+}
+
+.button_counter, .button_counter:focus{
+  border: none;
+  outline: 2px solid black;
+  border-radius: 10%;
+  color: #000000;
+  background-color: #45a049;
+}
+
+.button_counter:hover {
+  border: none;
+  outline: 2px solid black;;
+  transition: transform 0.05s ease;
+  transform: scale(1.1);
+}
+
+.button_counter:active {
+  border: none;
+  color: #000000;
+  background-color: #337536;
+  transform: scale(1);
+  transition: transform 0.05s ease;
+}
+
+.counter_title {
+  color: #45a049;
+}
+
+.button_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.button_counter_minus, .button_counter_minus:focus {
+  background-color: #ff4444;
+}
+
+.button_counter_minus:active {
+  background-color: #d53939;
+}
+
+.button_counter_null, .button_counter_null:focus {
+  background-color: antiquewhite;
+}
+
+.button_counter_null:active {
+  background-color: rgb(195, 183, 167);
+}
+
+.user_card-dark {
+  background-color: #2d3748;
+  color: white;
+  border: 1px solid #4a5568;
+}
+
+.user_card-dark .user_name {
+  color: #e2e8f0;
+}
+
+.user_card-dark .contact-btn-dark {
+  background-color: #4a5568;
+  color: white;
+}
+
+.user_card-dark .contact-btn-dark:hover {
+  background-color: #718096;
+}
